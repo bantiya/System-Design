@@ -7,7 +7,61 @@ Revision areas:
 3. **Key Technologies** — common system design building blocks.
 4. **Common Patterns** — reusable architecture patterns.
 
+## Table of Contents
+
+| Part | Topic |
+|---:|---|
+| 1 | [Delivery Framework](#part-1-delivery-framework) |
+| 2 | [Core Concepts](#part-2-core-concepts) |
+| 3 | [Key Technologies](#part-3-key-technologies) |
+| 4 | [Common Patterns](#part-4-common-patterns) |
+
 # Part 1: Delivery Framework
+
+## Delivery Framework Roadmap
+
+```text
+1. Requirements (~5 min)
+   ├── Functional requirements: user needs
+   ├── Non-functional requirements: system needs
+   │   ├── Scalability
+   │   ├── CAP / consistency
+   │   ├── Latency
+   │   ├── Environment constraints
+   │   ├── Fault tolerance
+   │   ├── Compliance
+   │   ├── Security
+   │   └── Durability
+   └── Capacity estimation: skip initially unless numbers affect the design
+
+2. Core Entities (~2 min)
+   └── Main objects, relationships, ownership boundaries
+
+3. API / System Interface (~5 min)
+   └── API style, endpoints, request/response shape
+
+4. Data Flow (~5 min, optional)
+   └── End-to-end request flow before drawing architecture
+
+5. High-Level Design (~10-15 min)
+   └── Services, databases, caches, queues, external systems
+
+6. Deep Dives (~10 min)
+   └── Scaling, consistency, contention, fault tolerance, realtime behavior
+```
+
+Non-functional requirement shortcut: (SCale For Cloud DesignS)
+
+| Letter | Area |
+|---:|---|
+| S | Scalability |
+| Ca | CAP / Consistency |
+| L | Latency |
+| E | Environment constraints |
+| For | Fault tolerance |
+| Cloud | Compliance |
+| Design | Durability |
+| S | Security  |
 
 
 ## 1. Why Delivery Matters
@@ -956,6 +1010,37 @@ Strong candidates manage the interview, make trade-offs, and evolve a simple des
 # Part 2: Core Concepts
 
 Based on the Hello Interview **System Design in a Hurry: Core Concepts** material.
+
+## Core Concepts Roadmap
+
+```text
+1. Networking Essentials
+   └── HTTP, SSE, WebSockets, gRPC, load balancing, geography and latency
+
+2. API Design
+   └── REST, pagination, authentication, rate limiting
+
+3. Data Modeling
+   └── Entities, relational vs NoSQL, normalization, denormalization, access patterns
+
+4. Database Indexing
+   └── B-tree, hash, compound, specialized indexes, write/read trade-offs
+
+5. Caching
+   └── Cache-aside, invalidation, TTL, stampede prevention, cache failure
+
+6. Sharding
+   └── Shard keys, hash-based sharding, range-based sharding, directory-based sharding
+
+7. Consistent Hashing
+   └── Ring, virtual nodes, node add/remove behavior
+
+8. CAP Theorem
+   └── Consistency, availability, partition tolerance, eventual vs strong consistency
+
+9. Numbers to Know
+   └── Latency, capacity, storage, queue lag, rough estimation
+```
 
 ## 1. Why Core Concepts Matter
 
@@ -2266,6 +2351,46 @@ Example:
 
 Based on the Hello Interview **System Design in a Hurry: Key Technologies** material.
 
+## Key Technologies Roadmap
+
+```text
+1. Core Database
+   └── System of record for durable application data
+
+2. Relational Databases
+   └── SQL, joins, indexes, transactions, strong consistency
+
+3. NoSQL Databases
+   └── Flexible models, partition keys, high-scale reads/writes
+
+4. Blob Storage
+   └── Large files, metadata separation, upload/download flows
+
+5. Search Optimized Database
+   └── Full-text search, relevance, tokenization, fuzzy search
+
+6. API Gateway
+   └── Request routing, auth, rate limits, edge entry point
+
+7. Load Balancer
+   └── Traffic distribution, L4 vs L7, health checks
+
+8. Queue
+   └── Async work, buffering, retries, dead letter queues, backpressure
+
+9. Streams and Event Sourcing
+   └── Ordered events, replay, consumer groups, event history
+
+10. Distributed Lock
+    └── Coordination, contention control, lock expiry, granularity
+
+11. Distributed Cache
+    └── Redis-style caching, cache strategies, eviction, invalidation
+
+12. CDN
+    └── Global static content delivery, edge caching, signed URLs
+```
+
 ## 1. Why Key Technologies Matter
 
 System design assembles building blocks for a specific problem. Know at least one strong option in each major technology category.
@@ -3377,6 +3502,37 @@ Example:
 ---
 
 # Part 4: Common Patterns
+
+## Common Patterns Roadmap
+
+```text
+1. Pushing Realtime Updates
+   └── Polling, SSE, WebSockets, server-side fanout
+
+2. Managing Long-Running Tasks
+   └── Job queues, workers, status tracking, retries, failure handling
+
+3. Dealing with Contention
+   └── Transactions, locks, optimistic concurrency, queues, atomic operations
+
+4. Scaling Reads
+   └── Indexes, denormalization, read replicas, caching, CDN
+
+5. Scaling Writes
+   └── Partitioning, sharding, write bursts, batching, load shedding
+
+6. Handling Large Blobs
+   └── Blob storage, metadata DB, signed URLs, multipart upload
+
+7. Multi-Step Processes
+   └── Orchestration, choreography, workflow engines, compensation, saga pattern
+
+8. Proximity-Based Services
+   └── Geospatial indexes, cells, geohash, nearby search
+
+9. Pattern Selection
+   └── Choose patterns based on bottleneck, access pattern, and consistency needs
+```
 
 ## System Design Common Patterns — Revision Notes
 
