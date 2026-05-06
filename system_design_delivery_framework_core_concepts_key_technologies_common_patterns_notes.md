@@ -36,14 +36,14 @@ Deep Dives
 
 A typical 45-minute system design interview can be structured like this:
 
-| Section | Approx Time | Goal |
-|---|---:|---|
-| Requirements | ~5 minutes | Clarify functional and non-functional requirements |
-| Core Entities | ~2 minutes | Identify the main nouns/data objects |
-| API / System Interface | ~5 minutes | Define the contract between clients and the system |
-| Data Flow (optional) | ~5 minutes | Describe the processing sequence if the system is workflow-heavy |
-| High-Level Design | ~10–15 minutes | Draw a complete working architecture |
-| Deep Dives | ~10 minutes | Improve the design for bottlenecks, scale, failures, and trade-offs |
+| Section | Approx Time |
+|---|---:|
+| Requirements | ~5 minutes |
+| Core Entities | ~2 minutes |
+| API / System Interface | ~5 minutes |
+| Data Flow (optional) | ~5 minutes |
+| High-Level Design | ~10–15 minutes |
+| Deep Dives | ~10 minutes |
 
 The exact timing can shift depending on the interviewer, but the important thing is to avoid spending too long on early sections. If you spend 15 minutes on requirements and APIs, you may not have enough time to design and improve the system.
 
@@ -182,6 +182,8 @@ The system should support bursty read traffic during event launches, where thous
 ### Useful Non-Functional Requirement Checklist
 
 Use this checklist to identify the most relevant qualities:
+
+(SCaLE For Cloud Design SystemS)
 
 | Area | Questions to Ask |
 |---|---|
