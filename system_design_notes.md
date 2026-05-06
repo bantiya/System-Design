@@ -16,6 +16,67 @@ Revision areas:
 | 3 | [Key Technologies](#part-3-key-technologies) |
 | 4 | [Common Patterns](#part-4-common-patterns) |
 
+## Quick Roadmaps
+
+### Part 1: Delivery Framework
+
+```text
+1. Requirements
+   ├── Functional requirements
+   ├── Non-functional requirements
+   └── Capacity estimation
+2. Core Entities
+3. API / System Interface
+4. Data Flow
+5. High-Level Design
+6. Deep Dives
+```
+
+### Part 2: Core Concepts
+
+```text
+1. Networking Essentials
+2. API Design
+3. Data Modeling
+4. Database Indexing
+5. Caching
+6. Sharding
+7. Consistent Hashing
+8. CAP Theorem
+9. Numbers to Know
+```
+
+### Part 3: Key Technologies
+
+```text
+1. Core Database
+2. Relational Databases
+3. NoSQL Databases
+4. Blob Storage
+5. Search Optimized Database
+6. API Gateway
+7. Load Balancer
+8. Queue
+9. Streams and Event Sourcing
+10. Distributed Lock
+11. Distributed Cache
+12. CDN
+```
+
+### Part 4: Common Patterns
+
+```text
+1. Pushing Realtime Updates
+2. Managing Long-Running Tasks
+3. Dealing with Contention
+4. Scaling Reads
+5. Scaling Writes
+6. Handling Large Blobs
+7. Multi-Step Processes
+8. Proximity-Based Services
+9. Pattern Selection
+```
+
 # Part 1: Delivery Framework
 
 ## Delivery Framework Roadmap
