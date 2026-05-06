@@ -22,8 +22,20 @@ Revision areas:
 
 ```text
 1. Requirements
-   ├── Functional requirements
-   ├── Non-functional requirements
+   ├── Functional requirements: USER needs
+   ├── Non-functional requirements: SYSTEM needs
+   │   ├── Scalability
+   │   ├── CAP / consistency
+   │   │    ├── Partition Tolerant -> Must have 
+   │   │    ├── Avalability -> Data should be highly available
+   │   │    ├── Consistency -> Strong read after write (does every single read of my system have to read the latest write 
+   │   │                       ticket booking, buying stocks) [strong consistency, eventual consistency]
+   │   ├── Latency
+   │   ├── Environment constraints
+   │   ├── Fault tolerance
+   │   ├── Compliance
+   │   ├── Security
+   │   └── Durability
    └── Capacity estimation
 2. Core Entities
 3. API / System Interface
