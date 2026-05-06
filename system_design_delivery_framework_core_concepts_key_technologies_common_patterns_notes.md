@@ -388,7 +388,7 @@ Use GraphQL only if clients need flexible data fetching. Use gRPC mainly for int
 |---|---|
 | REST | Default for most interviews and product APIs |
 | GraphQL | Clients need different shapes of data and want to avoid over-fetching |
-| RPC / gRPC | Internal service-to-service communication where performance and strong contracts matter |
+| RPC / gRPC (Remote Procedure calls)| Internal service-to-service communication where performance and strong contracts matter |
 | WebSockets | Bidirectional realtime communication |
 | SSE | Server-to-client realtime updates |
 
